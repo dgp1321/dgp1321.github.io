@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Selected experiments by Dave. Explore Murmuration, a flocking simulation, and Snowglobe, an interactive miniature world for iPhone.">
+  <meta name="theme-color" content="#f3f1eb">
+  <meta property="og:title" content="Dave — Small worlds. Real motion.">
+  <meta property="og:description" content="Two experiments in movement, simulation, and the pleasure of small details.">
+  <meta property="og:type" content="website">
+  <title>Dave — Selected work</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <a href="#" class="wordmark" aria-label="Dave, back to top"><span class="mark" aria-hidden="true">d.</span><span>Dave<span class="wordmark-sub">An ongoing collection</span></span></a>
+    <nav aria-label="Main navigation"><a href="#work">Selected work <span class="count">02</span></a><a href="#about">About <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Experiments &amp; works in progress</p>
+        <h1 id="hero-title">Small worlds.<br><em>Real motion.</em></h1>
+        <p class="intro">A flock finding its shape. Snow finding its way home. A few things I’ve been making, one detail at a time.</p>
+        <a class="text-link" href="#work">Take a look around <span aria-hidden="true">↓</span></a>
+      </div>
+      <figure class="hero-image">
+        <a href="#snowglobe" aria-label="Explore the Snowglobe project"><img src="snowglobe-study.jpg" alt="A miniature snow-covered bridge, birch trees and glowing lantern inside a glass globe" width="1800" height="1266" fetchpriority="high"></a>
+        <figcaption><span>Snowglobe / A miniature world</span><span>3D model study, 2026</span></figcaption>
+      </figure>
+      <div class="hero-bottom"><span>Made of curiosity.</span><span>Scroll to explore <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <section class="work wrap" id="work" aria-labelledby="work-title">
+      <div class="section-header"><h2 id="work-title">Selected work</h2><span>2026 / Two ongoing experiments</span></div>
+
+      <article class="project flock-project" id="murmuration" aria-labelledby="flock-title">
+        <div class="project-copy">
+          <p class="project-index">01 / Movement study</p>
+          <h3 id="flock-title">Murmuration</h3>
+          <p class="project-deck">Five hundred birds.<br>No one in charge.</p>
+          <p>A study in how individual decisions become collective movement. Each bird responds to its neighbors and the air around it. The flock’s changing shape emerges from those local rules.</p>
+          <p>In the native prototype, a mouse or finger leaves a fading breeze through the flock. A second, experimental flight model adds banking, lift, drag and thrust.</p>
+          <dl class="project-facts"><div><dt>Medium</dt><dd>Unity / C#</dd></div><div><dt>Status</dt><dd>Mac prototype</dd></div><div><dt>Focus</dt><dd>Emergent behavior</dd></div></dl>
+          <div class="model-controls" role="group" aria-label="Choose a recorded simulation"><button type="button" class="model-button selected" data-model="research" aria-pressed="true">Research flight</button><button type="button" class="model-button" data-model="original" aria-pressed="false">Original model</button></div>
+          <p class="caption" id="model-caption" aria-live="polite">Research flight · 40-second recorded simulation</p>
+        </div>
+        <figure class="flock-media">
+          <div class="video-wrap"><video id="flock-video" controls playsinline loop muted preload="none" poster="murmuration-poster.jpg" aria-label="Recorded trajectories of the Murmuration research flight simulation" aria-describedby="replay-note"><source src="murmuration-research.mp4" type="video/mp4">Your browser does not support this video. <a href="murmuration-research.mp4">Download the recorded simulation</a>.</video></div>
+          <figcaption id="replay-note">Actual simulation trajectories in a diagnostic renderer. This is a recorded replay; interaction is available in the native prototype.</figcaption>
+        </figure>
+      </article>
+
+      <article class="project snow-project" id="snowglobe" aria-labelledby="snow-title">
+        <figure class="snow-media">
+          <div class="snow-frame"><img id="snow-image" src="snowglobe-on-table.jpg" alt="Snowglobe resting on a wooden table in a warm Christmas room, with flakes suspended over a snowy bridge" width="900" height="1309" loading="lazy"></div>
+          <div class="gallery-controls" role="group" aria-label="Choose a Snowglobe screenshot"><button type="button" class="gallery-button selected" data-view="on-table" aria-pressed="true">On the table</button><button type="button" class="gallery-button" data-view="picked-up" aria-pressed="false">Picked up</button><button type="button" class="gallery-button" data-view="turned" aria-pressed="false">Turned</button></div>
+          <figcaption>Captured from the native iPhone prototype. Room artwork was AI-generated; the globe is rendered 3D geometry.</figcaption>
+        </figure>
+        <div class="project-copy">
+          <p class="project-index">02 / An object to play with</p>
+          <h3 id="snow-title">Snowglobe</h3>
+          <p class="project-deck">A little winter.<br>A world in your hands.</p>
+          <p>A miniature bridge, a quiet stream, birch trees and a lantern. Pick up the globe, turn it, give it a shake, and watch the snow move through the scene.</p>
+          <p>Nine hundred individual flakes respond to motion and gravity. The room stays still as the globe turns; the snow keeps moving independently inside it.</p>
+          <dl class="project-facts"><div><dt>Medium</dt><dd>SwiftUI / RealityKit / Blender</dd></div><div><dt>Status</dt><dd>Private iPhone prototype</dd></div><div><dt>Focus</dt><dd>Touch, motion &amp; atmosphere</dd></div></dl>
+          <p class="availability"><span class="dot" aria-hidden="true"></span> In development. No public app release yet.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="about wrap" id="about" aria-labelledby="about-title"><p class="eyebrow">A note from the workbench</p><h2 id="about-title">Following a small idea<br>to see where it goes.</h2><div class="about-copy"><p>I’m Dave. This is a collection of things I’m working on: experiments in simulation, playful interaction, and small digital worlds.</p><p>These are prototypes, still being explored and refined. This page is a place to share a closer look at the work as it takes shape.</p></div></section>
+    <aside class="credits wrap" aria-label="Project attribution"><p>Murmuration’s research flight model adapts <a href="https://github.com/ramakarl/flock2">Flock2 by Rama Karl Hoetzlein</a>, used under the MIT license. It is an experimental adaptation, not a validated reproduction of wild bird behavior. Snowglobe uses CC0 rock textures from <a href="https://polyhaven.com/">Poly Haven</a>.</p></aside>
+  </main>
+  <footer class="wrap"><span>Dave / Selected work</span><span>Made with curiosity. Updated November 2026.</span><a href="#">Back to top <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>
